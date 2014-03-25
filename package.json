@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Elgo <nico@elgolfin.net>",
   "description": "Seamless node.js CMS",
+  "private": true,
   "contributors": [ 
     {
       "name": "",
