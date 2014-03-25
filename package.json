@@ -1,46 +1,10 @@
-{
-  "name": "partition",
-  "version": "0.1.0",
-  "author": "Elgo <nico@elgolfin.net>",
+{ "name": "partition",
   "description": "Seamless node.js CMS",
-  "private": true,
-  "contributors": [ 
-    {
-      "name": "",
-      "email": ""
-    } 
-  ],
-  "bin": {
-	
-  },
-  "scripts": {
-    
-  },
-  "main": "./index.js",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url":  "git+ssh://git@github.com:Elgolfin/partition.git"
+    "url":  "git+ssh://git@github.com:Elgolfin/partition.git" },
+  "dependencies": {
   },
-  "keywords": [
-    "cms",
-    "http",
-    "server"
-  ],
-  "dependencies" : {
-    
-  },
-  "devDependencies": {
-    
-  },
-  "bundledDependencies": [
-    "mu2",
-    "node-cache",
-	"colors",
-	"gaze",
-	"underscore"
-  ],  
-  "license": "",
-  "engines": {
-    "node": ">=0.10.26"
-  }
+  "private": true
 }
