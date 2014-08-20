@@ -17,8 +17,8 @@ function start(route) {
 		if (process.env.NODE_ENV == 'DEVELOPMENT') {
 			mu.clearCache();
 		}
-		var stream = mu.compileAndRender('authors.html', {name: "john"});
-		util.pump(stream, response);
+        var stream = mu.compileAndRender('authors.html', { name: "john" });
+        stream.pipe(response);
 	}
 	console.log("Server is starting...".yellow.bold);
 	http.createServer(onRequest).listen(process.env.SRV_PORT_NUMBER);

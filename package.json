@@ -1,10 +1,14 @@
-{ "name": "partition",
+{
+  "name": "partition",
   "description": "Seamless node.js CMS",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url":  "git+ssh://git@github.com:Elgolfin/partition.git" },
-  "dependencies": {
+    "url": "git+ssh://git@github.com:Elgolfin/partition.git"
   },
+  "devDependencies": {
+		"chai": "*",
+		"mocha": "*"
+		},
   "private": true
 }

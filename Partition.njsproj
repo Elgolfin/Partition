@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b02f8bf8-1827-4feb-bef7-32a59a44f23f}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>False</StartWebBrowser>
+    <NodeExePath>
+    </NodeExePath>
+    <ScriptArguments>
+    </ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="index.js">
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+    <Compile Include="test\test.js" />
+    <Compile Include="test\UnitTest1.js">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+    <Compile Include="test\UnitTest2.js">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+    <Compile Include="watcher.js" />
+    <Compile Include="core\index.js" />
+    <Compile Include="core\server\index.js" />
+    <Compile Include="core\server\router.js" />
+    <Compile Include="core\server\memento\index.js" />
+    <Compile Include="core\server\watcher\index.js" />
+    <Content Include="web\1\content\sample.json" />
+    <Content Include="web\1\content\sample1.json" />
+    <Content Include="web\1\content\sample2.json" />
+    <Content Include="web\1\templates\README.txt" />
+    <Content Include="web\1\templates\authors.html" />
+    <Content Include="web\1\content\test\test.json" />
+    <Content Include="web\1\content\test1\sample3.json" />
+    <Content Include="web\1\content\test\test\test.json" />
+    <Content Include="web\current\content\sample.json" />
+    <Content Include="web\current\content\sample1.json" />
+    <Content Include="web\current\content\sample2.json" />
+    <Content Include="web\current\templates\README.txt" />
+    <Content Include="web\current\templates\authors.html" />
+    <Content Include="web\current\content\test\test.json" />
+    <Content Include="web\current\content\test1\sample3.json" />
+    <Content Include="web\current\content\test\test\test.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core" />
+    <Folder Include="core\server" />
+    <Folder Include="core\server\memento" />
+    <Folder Include="core\server\watcher" />
+    <Folder Include="test\" />
+    <Folder Include="web" />
+    <Folder Include="web\1" />
+    <Folder Include="web\1\content" />
+    <Folder Include="web\1\content\test" />
+    <Folder Include="web\1\content\test\test" />
+    <Folder Include="web\1\content\test1" />
+    <Folder Include="web\1\templates" />
+    <Folder Include="web\current" />
+    <Folder Include="web\current\content" />
+    <Folder Include="web\current\content\test" />
+    <Folder Include="web\current\content\test\test" />
+    <Folder Include="web\current\content\test1" />
+    <Folder Include="web\current\templates" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
