@@ -7,22 +7,24 @@ var mu  = require('mu2');
 mu.root = process.env.TPL_DIR;
 //console.log(mu.root);
 
-function start(route) {
-	function onRequest(request, response) {
+function start(router) {
+    function onRequest(request, response) {
 		var pathname = url.parse(request.url).pathname;
-		console.log("Request for " + pathname + " received.");
+		//console.log("Request for " + pathname + " received.");
+        
+        router.response = response;
+        //console.log("Router Response: " + router.response);
+		router.route(pathname, response);
 		
-		route(pathname);
-		
-		if (process.env.NODE_ENV == 'DEVELOPMENT') {
-			mu.clearCache();
-		}
-        var stream = mu.compileAndRender('authors.html', { name: "john" });
-        stream.pipe(response);
-	}
-	console.log("Server is starting...".yellow.bold);
-	http.createServer(onRequest).listen(process.env.SRV_PORT_NUMBER);
-	console.log("Server has started. (listening on port :".green + process.env.SRV_PORT_NUMBER.green +")".green + "\n");
+    }
+    try {
+        console.log("Server is starting...".yellow.bold);
+        http.createServer(onRequest).listen(process.env.SRV_PORT_NUMBER);
+        console.log("Server has started. (listening on port :".green + process.env.SRV_PORT_NUMBER.green + ")".green + "\n");
+    }
+    catch (ex) {
+        console.log(ex);
+    }
 }
 
 exports.start = start;

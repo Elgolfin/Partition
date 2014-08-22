@@ -31,10 +31,11 @@
       <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
     </Compile>
-    <Compile Include="test\UnitTest2.js">
+    <Compile Include="test\UnitTest2.old">
       <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
     </Compile>
+    <Compile Include="try.js" />
     <Compile Include="watcher.js" />
     <Compile Include="core\index.js" />
     <Compile Include="core\server\index.js" />
@@ -49,9 +50,11 @@
     <Content Include="web\1\content\test\test.json" />
     <Content Include="web\1\content\test1\sample3.json" />
     <Content Include="web\1\content\test\test\test.json" />
+    <Content Include="web\current\content\index.json" />
     <Content Include="web\current\content\sample.json" />
     <Content Include="web\current\content\sample1.json" />
     <Content Include="web\current\content\sample2.json" />
+    <Content Include="web\current\content\test\index.json" />
     <Content Include="web\current\templates\README.txt" />
     <Content Include="web\current\templates\authors.html" />
     <Content Include="web\current\content\test\test.json" />
