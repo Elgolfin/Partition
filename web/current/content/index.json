@@ -1,0 +1,16 @@
+{
+	"configuration": {
+		"type": "Could be empty, contributor does whatever he wants; if filled, the current data item will be referenced/known as the specified type",
+		"page_template": "Could be empty; if so, this item cannot be displayed as a viewable web page; if specified and template does not exists, this item "
+	},
+	"data": [
+			{
+			"name": "If the name is declared twice in the same file, first|last will be used",
+			"value": ""
+			},
+			{
+			"name": "",
+			"value": ""
+			}
+		]
+}
