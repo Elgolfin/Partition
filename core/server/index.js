@@ -14,6 +14,7 @@ function start(router) {
 		router.route(pathname, response);
 		
     }
+
     try {
         console.log("Server is starting...".yellow.bold);
         http.createServer(onRequest).listen(process.env.SRV_PORT_NUMBER);

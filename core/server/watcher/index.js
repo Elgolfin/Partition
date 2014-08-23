@@ -12,7 +12,8 @@ function start (memcacheMan, callback) {
 
 		// On changed/added/deleted
 		this.on('all', function(event, filepath) {
-			console.log(filepath + ' was ' + event);
+            console.log(filepath + ' was ' + event);
+                            //TODO: refresh the cache with the new file
 		});
 		
 		callback();
