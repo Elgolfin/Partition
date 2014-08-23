@@ -7,8 +7,9 @@
     "url": "git+ssh://git@github.com:Elgolfin/partition.git"
   },
   "devDependencies": {
-		"chai": "*",
-		"mocha": "*"
-		},
+    "chai": "*",
+    "mocha": "*",
+    "sinon": "~1.10.3"
+  },
   "private": true
 }
