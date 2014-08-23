@@ -20,3 +20,7 @@ Blanket.js (Code Coverage) Setup
 3. Modify the package.json ("config": { "blanket": {"pattern": "Partition/core/" })
 4. mocha -r blanket --recursive -R html-cov > coverage.html
 5. https://github.com/Elgolfin/Partition/blob/master/coverage.html
+
+Travis-cov
+==========
+1. mocha -r blanket --recursive -R travis-cov
