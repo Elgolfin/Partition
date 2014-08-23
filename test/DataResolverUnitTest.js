@@ -7,10 +7,6 @@
 
 describe('Partition Test Suite ', function () {
     
-    //beforeEach(function (done) {
-    //    done();
-    //});
-    
     before(function () {
         process.env.ROOT_DIR = path.normalize(__dirname + "/../");
         process.env.CONTENT_DIR = process.env.ROOT_DIR + "/web/test/content";

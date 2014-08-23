@@ -9,13 +9,20 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*",
-    "sinon": "~1.10.3"
+    "sinon": "~1.10.3",
+    "blanket": "~1.1.6",
+    "travis-cov": "~0.2.5"
   },
   "private": true,
   "dependencies": {
+    "0": "0.0.0",
     "node-cache": "~1.0.0",
-	"colors": "~0.6.2",
-	"gaze": "~0.5.1",
-	"mu2": "~0.5.2"
+    "colors": "~0.6.2",
+    "gaze": "~0.5.1",
+    "mu2": "~0.5.2"
+  },
+  "config": { 
+	"travis-cov": { "threshold": 80 },
+	"blanket": {"pattern": "Partition/core/" }
   }
 }

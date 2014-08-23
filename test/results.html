@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mocha Partition Test Suite</title>
+    <link rel="stylesheet" href="mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="mocha.js"></script>
+    <script src="chai.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script>expect = chai.expect</script>
+    <script src="DataResolverUnitTest.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

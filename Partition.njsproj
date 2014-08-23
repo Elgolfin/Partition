@@ -21,10 +21,16 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="coverage.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Compile Include="core\server\DataResolver.js" />
+    <Compile Include="core\utilities\md5.js" />
     <Compile Include="index.js">
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+    <Compile Include="test\results.html">
+      <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
     </Compile>
     <Compile Include="test\test.js" />
@@ -33,6 +39,10 @@
       <TestFramework>Mocha</TestFramework>
     </Compile>
     <Compile Include="test\UnitTest2.old">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+    <Compile Include="test\utilities\md5UnitTest.js">
       <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
     </Compile>
@@ -71,10 +81,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="core" />
+    <Folder Include="core\utilities\" />
     <Folder Include="core\server" />
     <Folder Include="core\server\memento" />
     <Folder Include="core\server\watcher" />
     <Folder Include="test\" />
+    <Folder Include="test\utilities\" />
     <Folder Include="web" />
     <Folder Include="web\1" />
     <Folder Include="web\1\content" />
