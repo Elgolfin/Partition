@@ -1,28 +1,24 @@
-var http = require("http");
-var util = require("util");
-var url = require("url");
-var mu  = require('mu2');
+var express = require('express');
+var logger = require('morgan');
+var mu = require('mu2');
 
 //process.env.NODE_ENV = "DEVELOPMENT";
 mu.root = process.env.TPL_DIR;
 //console.log(mu.root);
 
-function start(router) {
-    function onRequest(request, response) {
 
-		var pathname = url.parse(request.url).pathname;
-		router.route(pathname, response);
-		
-    }
+function start() {
+    var app = express();
+    
+    app.use(logger('combined'));
+    require('./Routers/admin.js')(app);
+    require('./Routers/api.js')(app);
+    require('./Routers/assets.js')(app);
+    require('./Routers/web.js')(app);
 
-    try {
-        console.log("Server is starting...".yellow.bold);
-        http.createServer(onRequest).listen(process.env.SRV_PORT_NUMBER);
-        console.log("Server has started. (listening on port :".green + process.env.SRV_PORT_NUMBER.green + ")".green + "\n");
-    }
-    catch (ex) {
-        console.log(ex);
-    }
+    var server = app.listen(process.env.SRV_PORT_NUMBER, function () {
+        console.log('Listening on port %d'.green.bold, server.address().port);
+    });
 }
 
 exports.start = start;

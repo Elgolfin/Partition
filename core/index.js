@@ -9,7 +9,7 @@ var r = require('./server/DataResolver.js');
  * */
 function startPartition () {
 	watcher.start(memento.manager, function() {
-		server.start(router);
+		server.start();
 	});
 }
 

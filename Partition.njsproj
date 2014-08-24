@@ -25,6 +25,10 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Compile Include="core\server\DataResolver.js" />
+    <Compile Include="core\server\Routers\assets.js" />
+    <Compile Include="core\server\Routers\api.js" />
+    <Compile Include="core\server\Routers\admin.js" />
+    <Compile Include="core\server\Routers\web.js" />
     <Compile Include="core\utilities\md5.js" />
     <Compile Include="index.js">
       <TestFramework>Mocha</TestFramework>
@@ -81,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="core" />
+    <Folder Include="core\server\Routers\" />
     <Folder Include="core\utilities\" />
     <Folder Include="core\server" />
     <Folder Include="core\server\memento" />

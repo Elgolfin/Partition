@@ -24,3 +24,9 @@ Blanket.js (Code Coverage) Setup
 Travis-cov
 ==========
 1. mocha -r blanket --recursive -R travis-cov
+
+
+Useful (?) links
+================
+
+http://seejohncode.com/2012/01/13/javascript-testing-with-mocha/
