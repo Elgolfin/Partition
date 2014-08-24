@@ -54,7 +54,6 @@
     <Compile Include="watcher.js" />
     <Compile Include="core\index.js" />
     <Compile Include="core\server\index.js" />
-    <Compile Include="core\server\router.js" />
     <Compile Include="core\server\memento\index.js" />
     <Compile Include="core\server\watcher\index.js" />
     <Content Include="web\1\content\sample.json" />

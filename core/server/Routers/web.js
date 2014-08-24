@@ -35,7 +35,7 @@ function RenderPage(requestUrl, response) {
             mu.clearCache();
         }
         
-        var stream = mu.compileAndRender('authors.html', { name: dataFile.path });
+        var stream = mu.compileAndRender('index.html', { name: dataFile.path });
         stream.pipe(response);
     }
     if (dataFile.status_code === 404) {

@@ -11,6 +11,7 @@ function start() {
     var app = express();
     
     app.use(logger('combined'));
+    app.use(express.static(process.env.ASSETS_DIR));
     require('./Routers/admin.js')(app);
     require('./Routers/api.js')(app);
     require('./Routers/assets.js')(app);
