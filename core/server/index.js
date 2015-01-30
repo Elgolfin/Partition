@@ -12,10 +12,10 @@ function start() {
     
     app.use(logger('combined'));
     app.use(express.static(process.env.ASSETS_DIR));
-    require('./Routers/admin.js')(app);
-    require('./Routers/api.js')(app);
-    require('./Routers/assets.js')(app);
-    require('./Routers/web.js')(app);
+    require('./routers/admin')(app);
+    require('./routers/api')(app);
+    require('./routers/assets')(app);
+    require('./routers/web')(app);
 
     var server = app.listen(process.env.SRV_PORT_NUMBER, function () {
         console.log('Listening on port %d'.green.bold, server.address().port);

@@ -1,6 +1,6 @@
 ﻿var express = require('express');
 var mu = require('mu2');
-var dataResolver = require('../DataResolver');
+var dataResolver = require('../data/dataResolver');
 var url = require("url");
 
 function routerWeb(app) {

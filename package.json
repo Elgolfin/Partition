@@ -22,7 +22,8 @@
     "mu2": "~0.5.2",
     "underscore": "~1.6.0",
     "express": "~4.8.5",
-    "morgan": "~1.2.3"
+    "morgan": "~1.2.3",
+    "nunjucks": "~1.0.7"
   },
   "config": {
     "travis-cov": {

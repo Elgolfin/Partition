@@ -21,14 +21,20 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="core\server\memento\manager.js" />
+    <Compile Include="core\server\memento\node-cache-ext.js" />
+    <Compile Include="try2.js" />
+    <Compile Include="web\current\assets\js\carouFredSel.js" />
+    <Compile Include="web\current\assets\js\jquery.js" />
+    <Compile Include="web\current\assets\js\main.js" />
     <Content Include="coverage.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Compile Include="core\server\DataResolver.js" />
-    <Compile Include="core\server\Routers\assets.js" />
-    <Compile Include="core\server\Routers\api.js" />
-    <Compile Include="core\server\Routers\admin.js" />
-    <Compile Include="core\server\Routers\web.js" />
+    <Compile Include="core\server\data\dataResolver.js" />
+    <Compile Include="core\server\routers\assets.js" />
+    <Compile Include="core\server\routers\api.js" />
+    <Compile Include="core\server\routers\admin.js" />
+    <Compile Include="core\server\routers\web.js" />
     <Compile Include="core\utilities\md5.js" />
     <Compile Include="index.js">
       <TestFramework>Mocha</TestFramework>
@@ -64,6 +70,33 @@
     <Content Include="web\1\content\test\test.json" />
     <Content Include="web\1\content\test1\sample3.json" />
     <Content Include="web\1\content\test\test\test.json" />
+    <Content Include="web\current\assets\css\main.css" />
+    <Content Include="web\current\assets\css\main_responsive.css" />
+    <Content Include="web\current\assets\css\reset.css" />
+    <Content Include="web\current\assets\fonts\avantgardelt-extralight.eot" />
+    <Content Include="web\current\assets\fonts\avantgardelt-extralight.svg" />
+    <Content Include="web\current\assets\fonts\avantgardelt-extralight.ttf" />
+    <Content Include="web\current\assets\fonts\avantgardelt-extralight.woff" />
+    <Content Include="web\current\assets\fonts\lato-bold.eot" />
+    <Content Include="web\current\assets\fonts\lato-bold.ttf" />
+    <Content Include="web\current\assets\fonts\lato-bold.woff" />
+    <Content Include="web\current\assets\fonts\lato-regular.eot" />
+    <Content Include="web\current\assets\fonts\lato-regular.ttf" />
+    <Content Include="web\current\assets\fonts\lato-regular.woff" />
+    <Content Include="web\current\assets\img\billboard.jpg" />
+    <Content Include="web\current\assets\img\icon1.png" />
+    <Content Include="web\current\assets\img\icon2.png" />
+    <Content Include="web\current\assets\img\icon3.png" />
+    <Content Include="web\current\assets\img\icon4.png" />
+    <Content Include="web\current\assets\img\icon5.png" />
+    <Content Include="web\current\assets\img\icon6.png" />
+    <Content Include="web\current\assets\img\info_img.jpg" />
+    <Content Include="web\current\assets\img\logo.png" />
+    <Content Include="web\current\assets\img\logo_footer.png" />
+    <Content Include="web\current\assets\img\menu_icon.png" />
+    <Content Include="web\current\assets\img\slider_nav.png" />
+    <Content Include="web\current\assets\img\sm.png" />
+    <Content Include="web\current\assets\img\sm_hover.png" />
     <Content Include="web\current\content\index.json" />
     <Content Include="web\current\content\sample.json" />
     <Content Include="web\current\content\sample1.json" />
@@ -84,7 +117,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="core" />
-    <Folder Include="core\server\Routers\" />
+    <Folder Include="core\server\data\" />
+    <Folder Include="core\server\routers\" />
     <Folder Include="core\utilities\" />
     <Folder Include="core\server" />
     <Folder Include="core\server\memento" />
@@ -99,6 +133,11 @@
     <Folder Include="web\1\content\test1" />
     <Folder Include="web\1\templates" />
     <Folder Include="web\current" />
+    <Folder Include="web\current\assets\" />
+    <Folder Include="web\current\assets\css\" />
+    <Folder Include="web\current\assets\fonts\" />
+    <Folder Include="web\current\assets\img\" />
+    <Folder Include="web\current\assets\js\" />
     <Folder Include="web\current\content" />
     <Folder Include="web\current\content\test" />
     <Folder Include="web\current\content\test\test" />
