@@ -7,7 +7,7 @@ Installation
 ============
 
 1. npm install https://github.com/Elgolfin/Partition.git
-2. cd core
+2. cd web
 3. mklink /d current 1 (create a hardlink)
 
 
